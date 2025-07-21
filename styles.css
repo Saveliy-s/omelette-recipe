@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-size: 27px;
+}
+
+p,
+li,
+table {
+    color: hsl(30, 10%, 34%);
+}
+
+h2,
+table tr td b {
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+h1,
+h2 {
+    font-family: 'YoungSerif', sans-serif;
+}
+
+p,
+h3,
+ul,
+ol,
+table {
+    font-family: 'Outfit', sans-serif;
+}
+
+.header-image {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: -30px -30px 5px -30px;
+}
+
+.main-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.preparation-time ul {
+    margin-left: 25px;
+}
+
+ul li::before {
+    content: "•";
+    color: hsl(332, 51%, 32%);
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+ol li::marker {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: none;
+    padding: 5px 0 5px 20px;
+    
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+@media (min-width: 600px) {
+    .main-content {
+        padding: 40px;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .header-image {
+        margin: -40px -40px 5px -40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 40px;
+    }
+
+    .header-image {
+        border-radius: 30px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-content {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+    }
+
+}
